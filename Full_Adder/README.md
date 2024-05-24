@@ -4,9 +4,9 @@ This repository contains the VHDL implementation of a full adder along with its 
 
 ## Repository Structure
 
-- **src/**: Contains the VHDL code for the full adder.
+- *src*: Contains the VHDL code for the full adder.
   - `full_adder.vhdl`: VHDL file implementing the full adder.
-- **testbench/**: Contains the VHDL code for the testbench.
+- *testbench*: Contains the VHDL code for the testbench.
   - `testbench.vhdl`: VHDL file for the testbench to test the full adder.
 
 ## Full Adder
@@ -35,4 +35,3 @@ The testbench (`testbench.vhdl`) is designed to apply a series of test vectors t
 
 - Test vectors for all possible combinations of inputs `A`, `B`, and `Cin`.
 - Assertions to check the correctness of the `Sum` and `Cout` outputs.
-

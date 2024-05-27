@@ -28,5 +28,3 @@ additionally it also contains the outputs.txt and TRACEFILE.txt for the same.
 
 ### Running the Test Generation Program
 To generate the `TRACEFILE.txt`, compile and run the test generation program (`test_gen.c` and `test_gen.py`).
-
-

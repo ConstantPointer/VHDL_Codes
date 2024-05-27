@@ -1,11 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 # Python code for TRACEFILE.txt generation for HALF-ADDER
-
 # Open/create TRACEFILE.txt in write mode
 f = open("TRACEFILE.txt", "w")
 
@@ -40,10 +33,3 @@ for input_vec in range(test_len):
 
 # Close file
 f.close()
-
-
-# In[ ]:
-
-
-
-

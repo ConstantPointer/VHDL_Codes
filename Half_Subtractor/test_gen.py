@@ -33,3 +33,42 @@ for input_vec in range(test_len):
 
 # Close file
 f.close()
+
+# Alternate python code to produce the same result choose according to your preference
+
+# Function to convert decimal to binary with fixed length
+# def dec_to_bin(num, length):
+#     return format(num, f'0{length}b')
+
+# # Main function to generate the trace file
+# def generate_tracefile():
+#     output_file = "TRACEFILE_HalfSubtractor.txt"
+#     input_len = 2  # Input vector length for HALF-SUBTRACTOR (2 inputs: a, b)
+#     output_len = 2 # Output vector length for HALF-SUBTRACTOR (2 outputs: diff, borrow)
+#     test_len = 2 ** input_len  # Total number of test vectors (exhaustive)
+
+#     with open(output_file, "w") as optr:
+#         for i in range(test_len):
+#             input_bin = dec_to_bin(i, input_len)  # Get input in binary form
+
+#             # Separate the inputs
+#             a = int(input_bin[0])
+#             b = int(input_bin[1])
+
+#             # Perform the half subtractor operation (difference and borrow)
+#             diff_bit = a ^ b          # Difference bit
+#             borrow_bit = (not a) & b  # Borrow bit
+
+#             # Combine borrow and difference into a single binary number
+#             output_bin = f'{borrow_bit}{diff_bit}'
+
+#             # Mask bits (equal to number of output bits)
+#             mask = "11"
+
+#             # Write input, output, and mask to the trace file
+#             optr.write(f'{input_bin} {output_bin} {mask}\n')
+
+# # Run the main function
+# if __name__ == "__main__":
+#     generate_tracefile()
+

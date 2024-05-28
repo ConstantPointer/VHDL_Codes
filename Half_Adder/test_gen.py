@@ -33,3 +33,43 @@ for input_vec in range(test_len):
 
 # Close file
 f.close()
+
+# Alternate python code to produce the same result choose according to your preference
+
+# Python code for TRACEFILE.txt generation for HALF-ADDER
+
+# Function to convert decimal to binary with fixed length
+# def dec_to_bin(num, length):
+#     return format(num, f'0{length}b')
+
+# # Main function to generate the trace file
+# def generate_tracefile():
+#     output_file = "TRACEFILE_HalfAdder.txt"
+#     input_len = 2  # Input vector length for HALF-ADDER (2 inputs: a, b)
+#     output_len = 2 # Output vector length for HALF-ADDER (2 outputs: sum, carry)
+#     test_len = 2 ** input_len  # Total number of test vectors (exhaustive)
+
+#     with open(output_file, "w") as optr:
+#         for i in range(test_len):
+#             input_bin = dec_to_bin(i, input_len)  # Get input in binary form
+
+#             # Separate the inputs
+#             a = int(input_bin[0])
+#             b = int(input_bin[1])
+
+#             # Perform the half adder operation (sum and carry)
+#             sum_bit = a ^ b           # Sum bit
+#             carry_bit = a & b         # Carry bit
+
+#             # Combine carry and sum into a single binary number
+#             output_bin = f'{carry_bit}{sum_bit}'
+
+#             # Mask bits (equal to number of output bits)
+#             mask = "11"
+
+#             # Write input, output, and mask to the trace file
+#             optr.write(f'{input_bin} {output_bin} {mask}\n')
+
+# # Run the main function
+# if __name__ == "__main__":
+#     generate_tracefile()
